@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Claude Code 研修 — AI Consulting, Inc.</title>
-<meta name="description" content="役員・事業部長・グループ長向けの実践型研修。Claude Code を使った実務レベルのAI駆動開発を、半日のハンズオンで体験。AIコンサルティング株式会社の研修プログラム。">
+<meta name="description" content="現場マネージャー・リーダー候補向けの入口（Door Opener）研修。Claude Code を使った実務レベルのAI駆動開発を、2〜3時間のハンズオンで体験。AIコンサルティング株式会社の研修プログラム。">
 <meta property="og:title" content="Claude Code 研修 — AI Consulting, Inc.">
-<meta property="og:description" content="実務レベルのAI駆動開発環境で、業務アプリを自分の手で作る半日ハンズオン研修。">
+<meta property="og:description" content="実務レベルのAI駆動開発環境で、業務アプリを自分の手で作る2〜3時間のハンズオン研修（Door Opener）。">
 <meta property="og:type" content="website">
 <style>
 :root{
@@ -137,7 +137,8 @@ section{padding:78px 0}
 
 /* instructor */
 .inst{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:var(--white);border:1px solid var(--ice);border-radius:18px;padding:38px;box-shadow:var(--shadow)}
-.inst .avatar{width:140px;height:140px;border-radius:50%;background:var(--navy);border:4px solid var(--coral);display:flex;align-items:center;justify-content:center}
+.inst .avatar{width:140px;height:140px;border-radius:50%;background:var(--navy);border:4px solid var(--coral);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.inst .avatar img{width:100%;height:100%;object-fit:cover;object-position:center top}
 .inst .avatar svg{width:62px;height:62px;stroke:var(--coral);fill:none;stroke-width:1.6}
 .inst .role{color:var(--coral);font-size:12px;font-weight:700;letter-spacing:1px}
 .inst h3{font-size:24px;color:var(--navy);margin:2px 0 4px}
@@ -167,6 +168,8 @@ section{padding:78px 0}
 .cta{background:linear-gradient(135deg,#0A1F44,#12326c);color:#fff;text-align:center}
 .cta h2{font-size:34px;font-weight:800;margin-bottom:12px}
 .cta p{color:#c3cfe2;font-size:16px;margin-bottom:30px}
+.cta .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta .btn-ghost{border-color:rgba(255,255,255,.55)}
 .cta .mail{font-family:var(--chancery);font-style:italic;color:var(--gold-light);font-size:24px;margin-top:22px;display:block}
 
 /* footer */
@@ -204,7 +207,7 @@ section{padding:78px 0}
       <a class="hide" href="#program">プログラム</a>
       <a class="hide" href="#curriculum">カリキュラム</a>
       <a class="hide" href="#price">料金</a>
-      <a class="btn-sm" href="#contact">お問い合わせ</a>
+      <a class="btn-sm" href="https://www.ai-imf.com/contact.html" target="_blank" rel="noopener">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -212,17 +215,17 @@ section{padding:78px 0}
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="tagline"><b>CASE STUDY</b> ／ 研修プログラム</span>
-    <h1>Claude Code 研修<br><span class="accent">実務レベルのAI駆動開発を、半日で。</span></h1>
-    <p class="lede">役員・事業部長・グループ長が、自らの手で業務アプリを作る。</p>
+    <span class="tagline"><b>CASE STUDY</b> ／ Door Opener 研修（2〜3時間）</span>
+    <h1>Claude Code 研修<br><span class="accent">実務レベルのAI駆動開発を、数時間で。</span></h1>
+    <p class="lede">現場のマネージャー・リーダー候補が、自らの手で業務アプリを作る。</p>
     <p class="desc">「AIでどこまで作れるのか」を、説明ではなく体験で理解する実践型研修です。ログインするだけで使える実務レベルの開発環境で、Claude Code を相棒に、共有カレンダーから自分だけの業務管理アプリまでを作り上げます。</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#contact">研修を相談する</a>
       <a class="btn btn-ghost" href="#price">料金を見る</a>
     </div>
     <div class="hero-meta">
-      <div class="m"><span class="k">FORMAT</span><span class="v">半日ハンズオン</span></div>
-      <div class="m"><span class="k">FOR</span><span class="v">役員・部長クラス</span></div>
+      <div class="m"><span class="k">FORMAT</span><span class="v">2〜3時間</span></div>
+      <div class="m"><span class="k">FOR</span><span class="v">現場マネージャー／リーダー候補</span></div>
       <div class="m"><span class="k">STYLE</span><span class="v">実機で手を動かす</span></div>
       <div class="m"><span class="k">ENV</span><span class="v">環境構築不要</span></div>
     </div>
@@ -239,7 +242,7 @@ section{padding:78px 0}
           <h2>「AIで作れる」を、<br>体感に変える研修。</h2>
         </div>
         <p>生成AIの進化で、プログラミングの常識は大きく変わりました。けれど、その実力は資料を読むだけでは伝わりません。</p>
-        <p>本研修では、エンジニアでない意思決定層の方にこそ、<b>自分の手で動くアプリを作る</b>体験をしていただきます。「どこまで実務に使えるか」「自部署でどう活かせるか」を、肌で見極めるための半日です。</p>
+        <p>本研修では、エンジニアでない現場のマネージャー・リーダー候補の方にこそ、<b>自分の手で動くアプリを作る</b>体験をしていただきます。「どこまで実務に使えるか」「自部署でどう活かせるか」を、2〜3時間でつかむための入口（Door Opener）研修です。重たい座学ではなく、まず触れてみる場です。</p>
         <p>私たち AI Consulting が、保険・人事・不動産などのダッシュボードを Claude Code で実際に構築してきた知見を、そのまま研修に落とし込みました。</p>
       </div>
       <div class="panel">
@@ -266,8 +269,8 @@ section{padding:78px 0}
     <div class="grid g3">
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M17 11l2 2 4-4"/></svg></div>
-        <h3>意思決定層の方</h3>
-        <p>役員・事業部長・グループ長など、AI活用の方針を判断する立場の方。投資対効果を体感で掴みたい方に。</p>
+        <h3>現場のマネージャー</h3>
+        <p>チームを率いる立場で、AI活用の現実的な可能性を見極めたい方。まず自分の手で触ってみたい方に。</p>
       </div>
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
@@ -276,10 +279,11 @@ section{padding:78px 0}
       </div>
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-        <h3>現場の改善リーダー</h3>
-        <p>日々の業務を自分たちで楽にしたい方。小さなツールを内製する第一歩を踏み出したい方に。</p>
+        <h3>リーダー候補の方</h3>
+        <p>これから現場を引っ張る次世代の方。手を動かして引き出しを増やし、内製の第一歩を踏み出したい方に。</p>
       </div>
     </div>
+    <p style="margin-top:24px;color:var(--muted);font-size:13.5px">※ 役員・経営層の方のご参加も歓迎しています（もしご都合よろしければ）。</p>
   </div>
 </section>
 
@@ -397,7 +401,7 @@ section{padding:78px 0}
       <h2>講師</h2>
     </div>
     <div class="inst">
-      <div class="avatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+      <div class="avatar"><img src="img/murase.png" alt="村瀬 克成 Katsunari Murase"></div>
       <div>
         <span class="role">Sales &amp; Marketing Director ／ セールス＆マーケティングディレクター</span>
         <h3>村瀬 克成<span>Katsunari Murase</span></h3>
@@ -421,9 +425,9 @@ section{padding:78px 0}
         <span class="ribbon">STANDARD</span>
         <div class="plan">5 名まで</div>
         <div class="amt">¥100,000<small>（税別）</small></div>
-        <div class="per">1 回・最大 5 名様まで／半日ハンズオン</div>
+        <div class="per">1 回・最大 5 名様まで／2〜3時間のハンズオン</div>
         <ul>
-          <li>講義・デモ・ハンズオン・振り返りの一式</li>
+          <li>講義・デモ・ハンズオン・振り返りの一式（2〜3時間）</li>
           <li>環境構築済みの実機環境をご用意（準備不要）</li>
           <li>当日のアカウント発行・サポート込み</li>
           <li>研修スライド資料の共有</li>
@@ -445,7 +449,10 @@ section{padding:78px 0}
   <div class="wrap">
     <h2>まずは、お気軽にご相談ください。</h2>
     <p>自部署での活用イメージ・ご希望の人数感など、ヒアリングからご一緒します。</p>
-    <a class="btn btn-primary" href="https://www.ai-imf.com/contact.html">お問い合わせフォームへ</a>
+    <div class="cta-btns">
+      <a class="btn btn-primary" href="mailto:info@ai-imf.com?subject=%E3%80%90Claude%20Code%E7%A0%94%E4%BF%AE%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B&body=AI%20Consulting%20%E5%BE%A1%E4%B8%AD%0D%0A%0D%0AClaude%20Code%20%E7%A0%94%E4%BF%AE%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%BE%E3%81%99%E3%80%82%0D%0A%0D%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0D%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%EF%BC%8F%E6%89%80%E5%B1%9E%EF%BC%9A%0D%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E4%BA%BA%E6%95%B0%EF%BC%9A%0D%0A%E3%81%94%E5%B8%8C%E6%9C%9B%E6%97%A5%E7%A8%8B%EF%BC%9A%0D%0A%E3%81%94%E7%9B%B8%E8%AB%87%E5%86%85%E5%AE%B9%EF%BC%9A%0D%0A">メールで相談する</a>
+      <a class="btn btn-ghost" href="https://www.ai-imf.com/contact.html" target="_blank" rel="noopener">お問い合わせフォーム</a>
+    </div>
     <a class="mail" href="mailto:info@ai-imf.com">info@ai-imf.com</a>
   </div>
 </section>
